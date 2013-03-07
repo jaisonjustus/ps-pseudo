@@ -1,4 +1,4 @@
-ps-pseudo
-=========
-Pseudo Code/Patterns for Pryv
-**SDK**
+## Pseudo Code/Patterns for Pryv
+==========================================
+
+- Pattern model for Web-Access SDK : **SDK/**
