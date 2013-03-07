@@ -1,0 +1,7 @@
+{
+  "name": "backbone.pryv",
+  "version": "0.1.19",
+  "dependencies": {
+    "backbone-amd-lodash": "0.9.3"
+  }
+}

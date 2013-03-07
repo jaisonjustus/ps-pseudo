@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> PrYv SDK | Pseudo Design </title>
+  </head>
+  <body>
+    <input type="button" onClick="requestAccess(); return false;" value="Request Access!!"/>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
+    <script type="text/javascript" src="pryv-sdk.js"></script>
+    <script type="text/javascript">
+
+      function requestAccess()  {
+        Pryv.SDK.init({
+          requestingAppId : 'test-web-app',
+          languageCode : 'en',
+          requestedPermissions : 'yes',
+          returnURL : 'http://helloworld.com',
+          forcePolling : false,
+          buttonPlaceholder : 'pryvButton',
+          callbacks : {
+            initialization : function() {},
+            needSignin : function() {},
+            needValidation : function() {},
+            accepted : function() {},
+            refused : function()  {},
+            error : function()  {},
+          }
+        });
+      }
+
+    </script>
+  </body>
+</html>
